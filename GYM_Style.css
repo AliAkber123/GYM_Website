@@ -24,10 +24,11 @@ img {
 
 .navbar {
     border-radius: 3px;
-    background-color:rgb(45 39 39);
+    background-color:rgb(63, 34, 34);
     position: sticky;
     top: 2px;
 }
+
 
 
 .navbar{
