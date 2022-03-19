@@ -3,29 +3,30 @@
     background-size: cover;
     background-position:top center;
     position: relative;
+    z-index: -1;
+}
+
+.container{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar {
+    
+    background-color:linear-gradient(60deg, #232b33 0%, #232b33 100%);
+    /* background-color: #232b33; */
+    background-image: linear-gradient(60deg, #232b33 0%, #232b33 100%);
+    top: -1px;
+    border: rgb(80, 80, 80);
+    border-radius: 1px;
+    position: sticky;
     z-index: 1;
 }
 
-
-
-.container{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-
-.navbar {
-    border-radius: 3px;
-    background-color:rgb(80, 80, 80);
-    position: sticky;
-    top: 2px;
-    border: rgb(80, 80, 80);
-    border-radius: 9px;
-}
 
 .div1 {
 	margin: auto;
@@ -47,6 +48,7 @@ color: beige;
 
 .navbar ul{
   overflow: auto;
+
 }
 
 l, ol, ul {
@@ -62,16 +64,18 @@ ol, ul {
   float:left;
   list-style: none; 
   margin: 13px 20px;
-  
+
 }
 .navbar li a{
   padding: 3px 3px;
   text-decoration: none;
   color: white;
+
 }
 .navbar li a:hover{
   color: rgb(165, 165, 165);
   transition: .3s ease ;
+
 }
 .search{
   float: right;
@@ -90,7 +94,6 @@ ol, ul {
 }
 .section-title span{
     color: crimson;
-    
 }
 
 
@@ -100,6 +103,7 @@ ol, ul {
   padding: 3px 18px;
   width: 117px;
   margin-right: -25px;
+
 }
 
 
@@ -140,14 +144,7 @@ ol, ul {
 
 
 
-
-
-
-
-
-
-
-
+/* ********************************************************************************************************************************************************************* */
 
 /* Hero section  */
 
@@ -167,6 +164,8 @@ position: relative;
 color: rgb(80, 80, 80);
 animation: text_reveal .5s ease forwards; 
 animation-delay: 1s;
+font-style: italic;
+font-family: 'Courier New', Courier, monospace;
 }
 #hero h1:nth-child(1){
   animation-delay: 1s ;
@@ -200,57 +199,181 @@ animation-delay: 1s;
 
 /* END of Hero section  */
 
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* BLOG Section start */
+.abt1st{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.col-md-6{
+  padding: 20px 70px 20px 10px;
+}
+
+#about h3{
+  margin: 20px auto;
+  font-size: 2em;
+  font-weight: bold;
+}
+#about p
+{
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+.abt1st{
+  padding-left: 60px;
+  padding-top: 28px;
+  padding-bottom: 20px;
+}
+#about{
+  background-color: rgba(255, 255, 255, 0.836);
+}
+
+.aboutTop{
+  font-size: 4rem;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+.aboutTop span{
+  color: crimson;
+  
+}
+/* BLOG section end */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ABOUT US section start */
+.container2{
+  width:100%;
+  height: 100%;
+   padding: 20px;
+   margin-top: 40px;
+   margin-bottom: 90px;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+  
+   flex-direction: row;
+   justify-content: center;
+}
+.box{
+  width: 100%;
+  height: 60%;
+  margin: 0 10px;
+  position: relative;
+  box-shadow: 0 0 20px 2px rgb(0, 0, 0, .1)  ;
+ 
+}
+
+img{
+  display: block;
+  width: 100%;
+  border-radius :5px ;
+}
+
+.image_overlay{
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  
+  color: rgb(253, 249, 249);
+  font-family: 'Quicksand',sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ;
+
+ 
+}
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
 
 
 
+.image_overlay:hover{
+  opacity: 1;
+  cursor:grab;
+}
 
 
+.image__overlay:hover > * {
+  transform: translateY(0);
+  
+}
+
+.trainer_title{
+  font-size: 2em;
+  font-weight: bold;
+}
+.trainer_description{
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
 
 
+#Trainers h3{
+  margin: 20px auto;
+  font-size: 2em;
+  font-weight: bold;
+}
+#Trainers p
+{
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
 
 
+/* ABOUT US section END */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* -------------------------------------------------------------------------------------------------------------------------- */
 
 
 /* Membership plan section  */
 #contact .contact{
-    flex-direction: column;
+    flex-direction:row;
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 100px;
+    
+
 }
 #contact .contact-items{
-    width: 500px;
+    width: 1200px;
     align-content: center;
+    display: flex;
+  
+    flex-direction: row;
+    justify-content: center;
 }
 #contact .contact-item{
-    width: 80%;
+    width: 100%;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     padding: 30px;
     margin: 30px;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction:row;
     box-shadow: 0px 0px 18px 0 #0000009c;
     transition: .3s ease box-shadow;
+    /* background-image: linear-gradient(60deg, #c8d4e0 0%, #93979b 100%); */
 }
 #contact .contact-item:hover{
     box-shadow: 0px 0px 5px 0 #0000009c ;
@@ -269,20 +392,12 @@ animation-delay: 1s;
     font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 500;
+    color: crimson;
 }
 
 /* END of Membership plan section  */
 
-
-
-
-
-
-
-
-
-
-
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Footer section  */
 #footer{
@@ -334,22 +449,52 @@ justify-content: center;
 /* END of Footer section  */
 
 
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* RECENT */
+/* Contact section  */
+#contactReal .contactReal{
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#contactReal .contactReal-items{
+  width: 500px;
+  align-content: center;
+}
+#contactReal .contactReal-item{
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 18px 0 #0000009c;
+  transition: .3s ease box-shadow;
+}
+#contactReal .contactReal-item:hover{
+  box-shadow: 0px 0px 5px 0 #0000009c ;
+}
+#contactReal .icon{
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#contactReal .contactReal-info h1{
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+#contactReal .contactReal-info h2{
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* END of Contact section  */
 
 
 

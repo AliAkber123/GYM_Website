@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(52, 66, 90);
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    color: crimson;
+    text-align: center;
+    line-height: 2.9;
+    font-size: 25px;
+}
+.wrapper{
+    width: 500px;
+    height: 370px;
+    background: white;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form .section1, .section2{
+    color: teal;
+    font-size: 22px;
+    margin-top: 10px;
+
+
+   
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        padding-left: 550px;
+
+}
+form .section1 input, .section2 input{
+    width: 200px;
+    border: 1px solid teal;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 7px;
+    color: rgba(102, 102, 102, 0.904);
+}
+form .submit input{
+    font-size: 18px;
+    color: coral;
+    background: white;
+    border: 1px solid coral;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    align-items: center;
+    
+}
+form .submit input:hover{
+    background: teal;
+    color: white;
+}
+.pass{
+    color: coral;
+    font-size: 18px;
+    padding-left: 700px;
+	text-align: center;
+    margin-top: 5px;
+}
+.pass1{
+    color: coral;
+    font-size: 18px;
+    padding-left: 125px;
+	text-align: center;
+    margin-top: 5px;
+}
+.one, .two, .three, .four, .five, .six{
+    width: 90px;
+    height: 170px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 705px;
+    
+
+}
+
+
+.div1 {
+	margin: auto;
+	width: 50%;
+	border: 3px solid rgb(0, 0, 0);
+	padding: 10px;
+	text-align: center;
+    
+    /* margin-top: 230px; */
+  }
+
+  .div2 {
+    font-size: 18px;
+    color: coral;
+    
+    border: 1px solid teal;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    align-items: center;
+	margin: auto;
+	width: 50%;
+	margin-top: 30px;
+    margin-bottom: 30px;
+	padding: 10px;
+	text-align: center;
+  }
+
+
